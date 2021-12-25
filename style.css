@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    background-image: url(images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+   padding:30px ;
+}
+
+.nav-link{
+    font-family: 'Barlow', serif;
+}
+
+.nav{
+    float: right;
+}
+
+.nav-item:nth-child(4) a{
+    color: black;
+    font-family: 'Fraunces', serif;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+.nav-item:nth-child(4) a:hover{
+    color:white;
+    background-color:#6ecfff ;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    background-color:white;
+    height: 3px;
+    width: 25px;
+    margin: 7px 5px 5px;
+    border-radius: 2px;
+}
+
+
+
+h1{
+    font-family: 'Fraunces', serif;
+    color: white;
+    letter-spacing: 7px;
+}
+
+.home button{
+    background: url(images/icon-arrow-down.svg) no-repeat;
+    width: 36px;
+    height: 114px;
+    border: none;
+    margin: 50px 50px 190px;   
+}
+
+.home h1{
+    position: relative;
+    margin: 70px 0px;
+}
+
+
+.container-fluid{
+    overflow: hidden;
+}
+
+.wrapper{
+    padding:25% 20% 15%;
+}
+
+.content h2{
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+
+.wrapper p{
+    font-family: 'Barlow', serif;
+    line-height: 1.9;
+    color: #8e8c91;
+}
+
+.content a{
+    font-family: 'Fraunces',serif;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.line{
+    width: 105px;
+    height: 7px;
+    background-color:#fcf4b5;
+    position: relative;
+    top:-8px;
+    left: -5px;
+    z-index: -1;
+    border-radius:5px;
+}
+
+.leftbg{
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+}
+
+.rightbg{
+    background-image: url(images/desktop/image-photography.jpg);
+    background-size: cover;
+}
+
+.bgcontent h3{
+    font-family: 'Fraunces',serif;
+    padding: 55% 10% 4%;
+    font-size: 25px;
+    opacity: 80%;
+    font-weight: 800;
+}
+
+.bgcontent p{
+    font-family: 'Barlow', serif;
+    line-height: 1.9;
+    padding: 0% 25% 5%;
+    font-size: 15px;
+}
+
+.client img{
+    border-radius: 50%;
+    width: 20%;
+}
+
+.content h4{
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    letter-spacing: 7px;
+    opacity: 0.6;
+    padding: 10% 0 7%;
+}
+
+.client{
+    padding-bottom: 15%;
+}
+
+.client p{
+    padding: 10% 5%;
+    font-family: 'Barlow', serif;
+    line-height: 1.9;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.client h5{
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}
+
+.client small{
+    font-family: 'Barlow', serif;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+footer{
+    background:#90d4c5;
+    padding: 7% 0; 
+}
+
+.footer path{
+    fill: #2f7769;
+}
+
+.footnav{
+    padding: 4%;
+}
+
+.footnav a{
+    text-decoration: none;
+    color: #2f7769;
+    padding: 0 2%;
+    font-family: 'Barlow', serif;
+    opacity: 0.8;
+}
+
+.footnav a:hover{
+    color: white;
+    opacity: 1;
+}
+
+.footnavbtn a{
+    margin: 10px;
+    font-size: 20px;
+    color: #2f7769;
+    opacity: 1;
+}
+
+
+@media(max-width:767px){
+    .home{
+        background-size: cover;
+    }
+    .home button{
+        margin: 20px;
+    }
+
+    .left{
+        order: 2;
+    }
+
+    .right{
+        order: 1;
+    }
+    
+    
+
+}
+
+@media (min-width:576px){
+    .navburger{
+        display: none !important;
+    }
+}
+@media(max-width:575px){
+    .burger{
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 85%;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .navburger {
+        background: white;
+        margin: auto;
+        width: 80%;
+        height: 230px;
+        display: none;
+        
+    }
+
+    .navburger::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 74px;
+        left: 82%;
+
+        border-left: 30px solid transparent;
+        border-bottom: 30px solid white;
+    }
+
+
+    .navcontent{
+        position: absolute;
+        top: 17%;
+        left: 37%;
+        text-align: center;
+
+    }
+
+    .navcontent ul {
+        list-style: none;
+        padding: 0 0 0 10px;  
+    }
+
+    .navcontent ul li{
+        padding: 0px 0 20px;
+    }
+
+    .tut{
+        text-decoration: none;
+        font-family: 'Barlow', serif;
+        color: grey;
+        opacity: 0.8;     
+    }
+    .contact {
+        font-family: 'Fraunces', serif;
+        text-decoration: none;
+        color:black;
+        opacity: 0.8;
+        background-color: #fbd600;
+        padding: 15px;
+        border-radius: 25px;
+        
+    }
+    .home{
+        background-size: cover;
+    }
+    
+}
